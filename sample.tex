@@ -1,0 +1,94 @@
+\documentclass{xjtuthesis_2014_d}
+\begin{document}
+	\settitle{论文题目}{Your Title}
+	\setauthor{张三}{San Zhang}
+	\setsupervisor{李四}{教授}{Si Li}{Prof.}
+	\setdiscipline{电气工程}{Electrical Engineering}
+	\setreplyyearmonth{2015}{9}{September}
+	\setdisciplinecategory{Engineering}
+	\maketitle
+	\frontmatter
+	\begin{abstractchs}{关键词1；关键词2；关键词3；}{应用研究}
+		中文摘要正文
+	\end{abstractchs}
+	\begin{abstracteng}{keyword 1; keyword 2; keyword 3;}{Application Research}
+		Abstract context
+	\end{abstracteng}
+	
+	\maketableofcontents
+	\maketableofengcontents
+	
+	%======================================================================
+	%主要符号表，可以省略。
+	%======================================================================
+	%	\begin{symbollist}
+	%		\begin{center}
+	%			\begin{tabular}{p{7em}p{23em}}
+	%				$D_v$	&	灌水器流量偏差系数\\
+	%				$D$		&	管道内径/mm\\
+	%				$D_e$	&	灌水器流道当量直径/mm\\
+	%				$l$		&	管长/m\\
+	%				$n$		&	迷宫流道单元个数/个\\
+	%				$q$		&	灌水器流量/$\text{L}\cdot \text{h}^{-1}$\\
+	%				$q_n$	&	灌水器额定流量/$\text{L}\cdot \text{h}^{-1}$\\
+	%				$Re$	&	雷诺数\\
+	%				$S_q$	&	灌水器流量标准偏差\\
+	%				$\nu$	&	流体的运动粘性系数\\
+	%				$x$		&	流态指数
+	%			\end{tabular}
+	%		\end{center}
+	%	\end{symbollist}
+	
+	\mainmatter
+	
+	\chapter{绪论}
+	\echapter{Introduction}
+	\label{chap:绪论}
+	\section{课题背景及意义}
+	\esection{Background and significance of the subject}
+	……
+	\section{国内外研究现状}
+	\esection{Research ...}
+	……
+	
+	\begin{thanks}
+		致谢中主要感谢导师和对论文工作有直接贡献和帮助的人士和单位。
+		
+		一般致谢的内容有：
+		
+		（一）对指导或协助指导完成论文的导师；
+		
+		（二）对国家科学基金、资助研究工作的奖学金基金、合同单位、资助或支持的企业、组织或个人；
+		
+		（三）对协助完成研究工作和提供便利条件的组织或个人；
+		
+		（四）对在研究工作中提出建议和提供帮助的人；
+		
+		（五）对给予转载和引用权的资料、图片、文献、研究思想和设想的所有者；
+		
+		（六）对其他应感谢的组织和个人。
+		
+		致谢言语应谦虚诚恳，实事求是。字数不超过1000汉字
+	\end{thanks}
+	
+	\bibliographystyle{gbt7714-2005}
+	\zihao{5}
+	\setlength{\bibsep}{0pt}
+	\bibliography{main}
+	\addcontentsline{toc}{chapter}{参考文献}
+	\addcontentsline{toe}{chapter}{References}
+	
+	%======================================================================
+	%附录，可以省略。
+	%======================================================================
+	\begin{appendices}
+		附录内容。。。
+	\end{appendices}
+	
+	\begin{achievements}
+		成果内容。。。
+	\end{achievements}
+	
+	\declarations
+	
+\end{document}
