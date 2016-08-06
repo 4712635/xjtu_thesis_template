@@ -23,6 +23,12 @@
 \setlength{\cmidrulewidth}{1pt}
 \setlength{\aboverulesep}{0pt}
 \setlength{\belowrulesep}{0pt}
+%表格固定列宽的左、中、右对齐
+\RequirePackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
 %%三级标题样式
 \CTEXsetup[name={,},number={\arabic{chapter}},format={\songti\centering\zihao{3}},beforeskip={2em},afterskip={1em}]{chapter}
 \CTEXsetup[format={\songti\centering\zihao{-3}\raggedright},beforeskip={1em},afterskip={0.5em},aftername={\space}]{section}
@@ -31,7 +37,7 @@
 \RequirePackage{amsmath}
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
 %%标题宏包及图表编号格式
-\RequirePackage[font={small,singlespacing},skip={0pt}]{caption}
+\RequirePackage[font={small,singlespacing},skip={0pt}]{caption,subcaption}
 \captionsetup{labelsep=quad}
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
