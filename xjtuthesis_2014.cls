@@ -7,8 +7,6 @@
 \LoadClass[cs4size,openany]{ctexbook}
 %%根据学校论文格式要求，设定纸张大小为A4，上3cm，下2.5cm，左2.6cm，右2.6cm
 \RequirePackage[a4paper,left=2.6cm,right=2.6cm,top=3cm,bottom=2.5cm]{geometry}
-%%使用times字体
-\RequirePackage{times}
 %%使用natbib宏包满足参考文献格式要求
 \RequirePackage[square,comma,numbers,sort&compress]{natbib}
 %%使用颜色宏包
@@ -193,7 +191,7 @@
 	\normalsize
 	\rmfamily
 	\hangafter=1
-	\hangindent=32pt
+	\hangindent=39pt
 	\noindent
 	\bfseries
 	Title:\ \titlestreng
@@ -203,6 +201,7 @@
 	Applicant:\ \authorstreng \\
 	Supervisor:\ \supervisorstre
 
+	\mdseries
 	\chapter*{Abstract}\chaptermark{Abstract}
 	\setlength{\parindent}{0pt}
 	}{\\
