@@ -7,6 +7,8 @@
 \LoadClass[cs4size,openany]{ctexbook}
 %%根据学校论文格式要求，设定纸张大小为A4，上3cm，下2.5cm，左2.6cm，右2.6cm
 \RequirePackage[a4paper,left=2.6cm,right=2.6cm,top=3cm,bottom=2.5cm]{geometry}
+%%使用times字体
+\RequirePackage{times}
 %%使用natbib宏包满足参考文献格式要求
 \RequirePackage[square,comma,numbers,sort&compress]{natbib}
 %%使用颜色宏包
@@ -23,12 +25,6 @@
 \setlength{\cmidrulewidth}{1pt}
 \setlength{\aboverulesep}{0pt}
 \setlength{\belowrulesep}{0pt}
-%表格固定列宽的左、中、右对齐
-\RequirePackage{array}
-\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
-\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
-\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
-\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
 %%三级标题样式
 \CTEXsetup[name={,},number={\arabic{chapter}},format={\songti\centering\zihao{3}},beforeskip={2em},afterskip={1em}]{chapter}
 \CTEXsetup[format={\songti\centering\zihao{-3}\raggedright},beforeskip={1em},afterskip={0.5em},aftername={\space}]{section}
@@ -37,7 +33,7 @@
 \RequirePackage{amsmath}
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
 %%标题宏包及图表编号格式
-\RequirePackage[font={small,singlespacing},skip={0pt}]{caption,subcaption}
+\RequirePackage[font={small,singlespacing},skip={0pt}]{caption}
 \captionsetup{labelsep=quad}
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
@@ -197,7 +193,7 @@
 	\normalsize
 	\rmfamily
 	\hangafter=1
-	\hangindent=39pt
+	\hangindent=32pt
 	\noindent
 	\bfseries
 	Title:\ \titlestreng
@@ -207,8 +203,7 @@
 	Applicant:\ \authorstreng \\
 	Supervisor:\ \supervisorstre
 
-	\mdseries
-	\chapter*{Abstract}\chaptermark{Abstract}
+	\chapter*{ABSTRACT}\chaptermark{ABSTRACT}
 	\setlength{\parindent}{0pt}
 	}{\\
 	
@@ -247,7 +242,7 @@
 	}
 %%英文目录
 \makeatletter
-\newcommand\engcontentsname{Contents}
+\newcommand\engcontentsname{CONTENTS}
 \newcommand\tableofengcontents{%
 	\if@twocolumn
 	\@restonecoltrue\onecolumn
